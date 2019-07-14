@@ -1,0 +1,15 @@
+<div class="container py-4">
+	
+	<div class="row">
+		
+		<div class="col-md-12">
+			<h1>Current Donations</h1>
+		</div>
+
+				<ul class="list-group">
+					<li class="list-group-item" *ngFor="let donation of donations">{{ donation.author }} + Amount: {{ donation.amount }} </li>
+				</ul>
+
+	</div>
+
+</div>
