@@ -8,8 +8,8 @@ const app = express();
 app.use(express.static(__dirname + '/dist/incdonation'));
 
 app.get('/*', function(req,res) {
- 	res.status(200).send("Hellow World");
-//res.sendFile(path.join(__dirname+'/dist/incdonaiton/index.html'));
+ 	//res.status(200).send("Hellow World");
+	res.sendFile(path.join(__dirname+'/dist/incdonation/index.html'));
 });
 
 // Start the app by listening on the default Heroku port
