@@ -3,6 +3,9 @@ import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
+
+import { environment } from '../../../environments/environment';
+
 @Component({
   selector: 'app-donation-list',
   templateUrl: './donation-list.component.html',
@@ -15,7 +18,7 @@ export class DonationListComponent implements OnInit {
 
   ngOnInit() {
 
-  	this.http.get('http://localhost:3000/donations').subscribe(data =>{
+  	this.http.get(environment.apiUrl + '/donations').subscribe(data =>{
   		console.log(data);
   		this.donations = data;
   	})
