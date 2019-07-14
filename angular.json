@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ngIncdonacion": {
+    "incdonation": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/ngIncdonacion",
+            "outputPath": "dist/incdonation",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -65,18 +65,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "ngIncdonacion:build"
+            "browserTarget": "incdonation:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "ngIncdonacion:build:production"
+              "browserTarget": "incdonation:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "ngIncdonacion:build"
+            "browserTarget": "incdonation:build"
           }
         },
         "test": {
@@ -113,15 +113,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "ngIncdonacion:serve"
+            "devServerTarget": "incdonation:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "ngIncdonacion:serve:production"
+              "devServerTarget": "incdonation:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "ngIncdonacion"
+  "defaultProject": "incdonation"
 }
