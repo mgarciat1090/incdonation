@@ -1,6 +1,6 @@
 # NgIncdonacion
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.1.
+This is an educative project, based on a single premise of helping to track and promote donations for organizations that help people or other causes 
 
 ## Development server
 
