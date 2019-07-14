@@ -1,4 +1,4 @@
-# NgIncdonacion
+# Incdonacion
 
 This is an educative project, based on a single premise of helping to track and promote donations for organizations that help people or other causes 
 
