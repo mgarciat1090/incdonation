@@ -11,6 +11,7 @@ import { MainPageComponent } from './commons/main-page/main-page.component';
 import { GoalListComponent } from './goals/goal-list/goal-list.component';
 import { DonatorListComponent } from './donators/donator-list/donator-list.component';
 import { FooterComponent } from './commons/footer/footer.component';
+import { AddDonationComponent } from './donations/add-donation/add-donation.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { FooterComponent } from './commons/footer/footer.component';
     MainPageComponent,
     GoalListComponent,
     DonatorListComponent,
-    FooterComponent
+    FooterComponent,
+    AddDonationComponent
   ],
   imports: [
     BrowserModule,

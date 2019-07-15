@@ -10,8 +10,17 @@
         <li class="nav-item active">
           <a class="nav-link" [routerLink]="['/']">Home <span class="sr-only">(current)</span></a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" [routerLink]="['/lists/donations']" >Donations</a>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Donations
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" [routerLink]="['/donations/list']">See all</a>
+            <a class="dropdown-item" [routerLink]="['/donations/add']" >Add new</a>
+            <a class="dropdown-item" href="#">See top</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Ask for donations</a>
+          </div>
         </li>
         <li class="nav-item">
           <a class="nav-link" [routerLink]="['/lists/goals']">Goals</a>

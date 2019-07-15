@@ -1,0 +1,34 @@
+<div class="container">
+	<div class="row">
+		<div class="col-sm-12">
+			<div class="jumbotron mt-4">
+				<h1>Causes to donate</h1>
+				<p><b>Total Causes:</b> {{ causes ? causes.length : ''}}</p>
+		
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-3" *ngFor="let cause of causes">
+			<div class="card text-center my-3">
+			  <div class="card-header">
+			  	{{cause.tagline}}
+			  </div>
+			  <div class="card-body">
+			  	<img src="{{cause.photo}}" class="img-fluid" alt="{{cause.title}}">
+			    <h5 class="card-title mt-2">With your help we are going to support: {{cause.title}}</h5>
+			    <p class="card-text">{{cause.description}}</p>
+			    <a href="#" class="btn btn-primary">Donate now <i class="fa fa-caret-right"></i></a>
+			  </div>
+			  <div class="card-footer text-muted">
+			    <p class="mb-1">2 days ago</p>
+			    <div class="share-icons">
+			    	<a href="#" class="social mr-2"><i class="fa fa-facebook-square"></i></a>
+			    	<a href="#" class="social mr-2"><i class="fa fa-twitter-square"></i></a>
+			    </div>
+			  </div>
+			</div>
+		</div>
+
+	</div>
+</div>

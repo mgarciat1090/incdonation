@@ -1,10 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-
-import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
-
-import { environment } from '../../../environments/environment';
+import { DonationsService } from '../../services/donations.service';
 
 @Component({
   selector: 'app-donation-list',
@@ -13,15 +10,14 @@ import { environment } from '../../../environments/environment';
 })
 export class DonationListComponent implements OnInit {
 
-  constructor(private http:HttpClient) { }
+  constructor(private _donationsService:DonationsService) { }
   donations;
 
   ngOnInit() {
 
-  	this.http.get(environment.apiUrl + '/donations').subscribe(data =>{
-  		console.log(data);
-  		this.donations = data;
-  	})
+    this._donationsService.getDonations().subscribe(data=>{
+      this.donations = data;
+    })
 
   }
 
